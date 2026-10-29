@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Saraff;Shubham;;;
+FN:Shubham Saraff
+ORG:STAIR Digital
+TITLE:Co-Founder & Director
+TEL;TYPE=CELL,VOICE:+919930220342
+EMAIL;TYPE=INTERNET:saraffshubham@gmail.com
+URL:https://www.stair.digital
+item1.URL:https://www.linkedin.com/in/shubhamsaraff/
+item1.X-ABLabel:LinkedIn
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/shubhamsaraff/
+END:VCARD
