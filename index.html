@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1c1b1f">
 <meta property="og:title" content="Shubham Saraff · STAIR Digital">
 <meta property="og:description" content="Co-Founder & CEO. Enterprise AI & ExO Services | Pre-IPO & Capital Markets | Board Services.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 70'%3E%3Cpolygon fill='%231c1b1f' points='40,0 82,0 100,34 59,34 59,70 19,70 0,34 40,34'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%20166'%3E%3Cpolygon%20fill='%23595959'%20points='99.2,0%20144.2,78.8%20144.2,165.5%2099.2,84.9'/%3E%3Cpolygon%20fill='%231c1b1f'%20points='99.2,0%20197.7,0%20241.7,78.8%20144.2,78.8'/%3E%3Cpolygon%20fill='%231c1b1f'%20points='0,84.9%2099.2,84.9%20144.2,165.5%2045,165.5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Tinos:ital@0;1&family=Arimo:wght@400;500&display=swap">
@@ -33,17 +33,25 @@ a{color:inherit}
 .hero{background:var(--ink);color:var(--paper);text-align:center;position:relative;overflow:hidden}
 .hero::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:120px;height:2px;background:var(--gold)}
 .hero .wrap{padding-block:calc(44px + env(safe-area-inset-top,0px)) 44px;display:flex;flex-direction:column;align-items:center}
-.mark{width:58px;height:auto;display:block}
+.mark{width:72px;height:auto;display:block}
 .word{font-family:var(--mark);font-weight:600;font-size:21px;letter-spacing:.26em;margin:12px 0 0 .26em;line-height:1}
 .sub{font-family:var(--mark);font-size:10px;letter-spacing:.4em;color:var(--gold-lt);margin:7px 0 0 .4em}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,11vw,46px);line-height:1.05;margin:34px 0 0;text-wrap:balance}
 .role{font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-lt);margin:13px 0 0 .32em}
-.save{margin-top:28px;display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:320px;min-height:54px;
-  background:var(--gold);color:var(--ink);text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+.save{margin-top:30px;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:340px;min-height:62px;
+  background:var(--gold);color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  border:1px solid var(--gold-lt);box-shadow:0 0 0 6px rgba(171,140,82,.18),0 14px 30px -12px rgba(0,0,0,.6);
   transition:background .18s ease, transform .18s ease}
-.save svg{width:20px;height:20px}
+.save svg{width:22px;height:22px;flex:none}
 .save:hover{background:var(--gold-lt)}
 .save:active{transform:scale(.98)}
+/* Sticky save bar: appears once the main button scrolls away */
+.savebar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(28,27,31,.96);border-top:1px solid #3a3730;
+  padding:10px max(16px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));
+  transform:translateY(110%);transition:transform .25s ease}
+.savebar.show{transform:none}
+.savebar .save{margin:0 auto;min-height:52px;box-shadow:none;font-size:13px}
+body{padding-bottom:84px}
 
 /* Sections */
 section.block .wrap{padding-block:38px 0}
@@ -101,14 +109,15 @@ footer .web{color:var(--gold-deep);margin-top:6px;letter-spacing:.02em}
 
 <header class="hero">
   <div class="wrap">
-    <svg class="mark" viewBox="0 0 100 70" role="img" aria-label="STAIR"><polygon fill="#f3f0ea" points="40,0 82,0 100,34 59,34 59,70 19,70 0,34 40,34"/></svg>
+    <svg class="mark" viewBox="0 0 242 166" role="img" aria-label="STAIR"><polygon fill="#b5ad9f" points="99.2,0 144.2,78.8 144.2,165.5 99.2,84.9"/><polygon fill="#f3f0ea" points="99.2,0 197.7,0 241.7,78.8 144.2,78.8"/><polygon fill="#f3f0ea" points="0,84.9 99.2,84.9 144.2,165.5 45,165.5"/></svg>
     <div class="word">STAIR</div>
     <div class="sub">DIGITAL</div>
     <h1>Shubham Saraff</h1>
     <p class="role">Co-Founder &amp; CEO</p>
-    <a class="save" href="shubham-saraff.vcf" type="text/vcard">
+    <a class="save" id="saveTop" href="Shubham-Saraff-STAIR.vcf" type="text/vcard">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
-      Save Contact
+      <span>Save Contact</span>
+      <svg class="dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
     </a>
   </div>
 </header>
@@ -189,5 +198,16 @@ footer .web{color:var(--gold-deep);margin-top:6px;letter-spacing:.02em}
   </div>
 </footer>
 
+<div class="savebar" id="saveBar" aria-hidden="true">
+  <a class="save" href="Shubham-Saraff-STAIR.vcf" type="text/vcard" tabindex="-1">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+    <span>Save Shubham's Contact</span>
+  </a>
+</div>
+<script>
+(function(){var t=document.getElementById('saveTop'),b=document.getElementById('saveBar');
+if(!('IntersectionObserver' in window)){b.classList.add('show');return;}
+new IntersectionObserver(function(e){var off=!e[0].isIntersecting;b.classList.toggle('show',off);b.setAttribute('aria-hidden',off?'false':'true');b.querySelector('a').tabIndex=off?0:-1;}).observe(t);})();
+</script>
 </body>
 </html>
