@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Shubham Saraff · STAIR Digital</title>
-<meta name="description" content="Shubham Saraff, Co-Founder & Director, STAIR Digital. Enterprise AI | Board Services | Pre-IPO & Capital Markets.">
-<meta name="theme-color" content="#f3f0ea">
+<meta name="description" content="Shubham Saraff, Co-Founder & CEO, STAIR Digital. Enterprise AI & ExO Services, Pre-IPO & Capital Markets, Board Services.">
+<meta name="theme-color" content="#1c1b1f">
 <meta property="og:title" content="Shubham Saraff · STAIR Digital">
-<meta property="og:description" content="Enterprise AI | Board Services | Pre-IPO & Capital Markets. Call, save contact, WhatsApp, LinkedIn, or build your AI blueprint.">
+<meta property="og:description" content="Co-Founder & CEO. Enterprise AI & ExO Services | Pre-IPO & Capital Markets | Board Services.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 70'%3E%3Cpolygon fill='%231c1b1f' points='40,0 82,0 100,34 59,34 59,70 19,70 0,34 40,34'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Tinos&family=Arimo:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Tinos:ital@0;1&family=Arimo:wght@400;500&display=swap">
 <style>
-/* Layout: the card's front as a header, a 2-column grid of 6 action tiles, then contact details */
+/* Layout: charcoal hero (brand, name, role, save contact) → what we do → founders → connect tiles → footer */
 :root{
-  --ground:#f3f0ea; --paper:#ffffff; --line:#e3dccd; --charcoal:#1c1b1f;
-  --gold:#ab8c52; --gold-deep:#8a6e3e; --gold-wash:#f7f2e8; --muted:#77736b;
+  --ink:#1c1b1f; --ink-2:#2a282d; --ivory:#f3f0ea; --paper:#ffffff; --line:#e3dccd;
+  --gold:#ab8c52; --gold-lt:#c9ad78; --gold-deep:#8a6e3e; --gold-wash:#f7f2e8; --muted:#6f6b64; --on-ink:#bdb6a8;
   --serif:"Tinos","Times New Roman",Times,serif;
   --mark:"Cinzel","Trajan Pro","Times New Roman",serif;
   --sans:"Arimo",Arial,Helvetica,sans-serif;
@@ -24,110 +24,170 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{
-  background:var(--ground); color:var(--charcoal); font-family:var(--sans);
-  -webkit-font-smoothing:antialiased; -webkit-tap-highlight-color:transparent;
-  min-height:100vh; display:flex; justify-content:center; align-items:center;
-  padding-block:max(32px, env(safe-area-inset-top,0px)) max(32px, env(safe-area-inset-bottom,0px));
-  padding-left:max(20px, env(safe-area-inset-left,0px)); padding-right:max(20px, env(safe-area-inset-right,0px));
-}
-main{width:100%;max-width:400px;display:flex;flex-direction:column;align-items:center;text-align:center}
+body{background:var(--ivory);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:10}
+.wrap{max-width:440px;margin:0 auto;padding-left:max(22px, env(safe-area-inset-left,0px));padding-right:max(22px, env(safe-area-inset-right,0px))}
+a{color:inherit}
 
-/* Header */
-header{display:flex;flex-direction:column;align-items:center}
-.logo{width:64px;height:auto;display:block}
-.word{font-family:var(--mark);font-weight:600;font-size:22px;letter-spacing:.24em;margin:11px 0 0 .24em;line-height:1}
-.sub{font-family:var(--mark);font-size:10.5px;letter-spacing:.36em;color:var(--gold);margin:7px 0 0 .36em}
-.rule{width:44px;height:2px;background:var(--gold);border:0;margin:22px 0 18px}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,10.5vw,42px);line-height:1.05;margin:0;text-wrap:balance}
-.role{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin:11px 0 0 .3em}
-.practice{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 12px;margin:14px 0 0;
-  font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal)}
-.practice i{width:1px;height:12px;background:var(--gold);display:block}
-.practice .br{flex-basis:100%;height:0}
+/* Hero */
+.hero{background:var(--ink);color:var(--paper);text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:120px;height:2px;background:var(--gold)}
+.hero .wrap{padding-block:calc(44px + env(safe-area-inset-top,0px)) 44px;display:flex;flex-direction:column;align-items:center}
+.mark{width:58px;height:auto;display:block}
+.word{font-family:var(--mark);font-weight:600;font-size:21px;letter-spacing:.26em;margin:12px 0 0 .26em;line-height:1}
+.sub{font-family:var(--mark);font-size:10px;letter-spacing:.4em;color:var(--gold-lt);margin:7px 0 0 .4em}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,11vw,46px);line-height:1.05;margin:34px 0 0;text-wrap:balance}
+.role{font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-lt);margin:13px 0 0 .32em}
+.save{margin-top:28px;display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:320px;min-height:54px;
+  background:var(--gold);color:var(--ink);text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  transition:background .18s ease, transform .18s ease}
+.save svg{width:20px;height:20px}
+.save:hover{background:var(--gold-lt)}
+.save:active{transform:scale(.98)}
 
-/* Tiles */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;margin-top:30px}
-.tile{
-  aspect-ratio:5/4; max-width:100%; min-width:0;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;
-  background:var(--paper); border:1px solid var(--line); color:var(--charcoal);
-  text-decoration:none; position:relative; padding:10px;
-  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-}
-.tile svg{width:32px;height:32px;flex:none}
+/* Sections */
+section.block .wrap{padding-block:38px 0}
+.eyebrow{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* What we do */
+.services{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--line)}
+.services li{display:grid;grid-template-columns:34px 1fr;gap:4px 14px;padding:18px 18px 18px 16px;border-top:1px solid var(--line);align-items:start}
+.services li:first-child{border-top:0}
+.services .ico{grid-row:span 2;width:34px;height:34px;border:1px solid var(--gold);color:var(--gold-deep);display:grid;place-items:center}
+.services .ico svg{width:18px;height:18px}
+.services h2{font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.2;margin:0;min-width:0}
+.services p{font-size:13px;line-height:1.5;color:var(--muted);margin:0;min-width:0}
+
+/* Founders */
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.founder{background:var(--paper);border:1px solid var(--line);padding:18px 14px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;min-width:0}
+.mono{width:48px;height:48px;border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--serif);font-size:19px;color:var(--gold-deep);letter-spacing:.04em}
+.founder b{display:block;font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.25;margin-top:12px;text-wrap:balance}
+.founder span{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-top:8px;line-height:1.5}
+
+/* Connect tiles */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{aspect-ratio:5/4;max-width:100%;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;
+  background:var(--paper);border:1px solid var(--line);color:var(--ink);text-decoration:none;position:relative;padding:10px;text-align:center;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease}
+.tile svg{width:30px;height:30px;flex:none}
 .tile span{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
-.tile small{display:block;font-size:10px;letter-spacing:.08em;color:var(--muted);margin-top:-5px;text-transform:none}
-.tile::after{content:"";position:absolute;right:9px;top:9px;width:9px;height:9px;
-  border-top:1.5px solid var(--gold);border-right:1.5px solid var(--gold);opacity:.7}
-.tile.primary{background:var(--charcoal);border-color:var(--charcoal);color:var(--paper)}
+.tile small{display:block;font-size:10.5px;color:var(--muted);margin-top:-5px}
+.tile::after{content:"";position:absolute;right:9px;top:9px;width:9px;height:9px;border-top:1.5px solid var(--gold);border-right:1.5px solid var(--gold);opacity:.7}
+.tile.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .tile.feature{background:var(--gold-wash);border-color:var(--gold)}
 .tile.feature small{color:var(--gold-deep)}
 .tile .gold{color:var(--gold-deep)}
 .tile:active{transform:scale(.97)}
-@media (hover:hover){
-  .tile:hover{transform:translateY(-2px);box-shadow:0 14px 28px -16px rgba(40,32,18,.45);border-color:var(--gold)}
-}
-.tile:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (hover:hover){.tile:hover{transform:translateY(-2px);box-shadow:0 14px 28px -16px rgba(40,32,18,.45);border-color:var(--gold)}}
+.tile:focus-visible,.save:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 /* Footer */
-.details{margin-top:28px;display:grid;gap:5px;font-size:13.5px;color:var(--muted)}
-.details a{color:inherit;text-decoration:none}
+footer .wrap{padding-block:34px calc(40px + env(safe-area-inset-bottom,0px));text-align:center;display:grid;gap:6px;font-size:13.5px;color:var(--muted)}
+footer a{text-decoration:none}
+footer .addr{margin-top:6px;line-height:1.5}
+footer .web{color:var(--gold-deep);margin-top:6px;letter-spacing:.02em}
 
 /* Entrance */
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-header,.tile,.details{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
-.tile:nth-child(1){animation-delay:.10s}.tile:nth-child(2){animation-delay:.15s}
-.tile:nth-child(3){animation-delay:.20s}.tile:nth-child(4){animation-delay:.25s}
-.tile:nth-child(5){animation-delay:.30s}.tile:nth-child(6){animation-delay:.35s}
-.details{animation-delay:.42s}
+.hero .wrap>*,.block{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>*:nth-child(n+4){animation-delay:.1s}
+.block:nth-of-type(2){animation-delay:.15s}.block:nth-of-type(3){animation-delay:.22s}.block:nth-of-type(4){animation-delay:.29s}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <svg class="logo" viewBox="0 0 100 70" role="img" aria-label="STAIR"><polygon fill="#1c1b1f" points="40,0 82,0 100,34 59,34 59,70 19,70 0,34 40,34"/></svg>
+
+<header class="hero">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 100 70" role="img" aria-label="STAIR"><polygon fill="#f3f0ea" points="40,0 82,0 100,34 59,34 59,70 19,70 0,34 40,34"/></svg>
     <div class="word">STAIR</div>
     <div class="sub">DIGITAL</div>
-    <hr class="rule">
     <h1>Shubham Saraff</h1>
-    <p class="role">Co-Founder &amp; Director</p>
-    <p class="practice"><span>Enterprise AI</span><i aria-hidden="true"></i><span>Board Services</span><span class="br"></span><span>Pre-IPO &amp; Capital Markets</span></p>
-  </header>
+    <p class="role">Co-Founder &amp; CEO</p>
+    <a class="save" href="shubham-saraff.vcf" type="text/vcard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+      Save Contact
+    </a>
+  </div>
+</header>
 
-  <nav class="grid" aria-label="Connect with Shubham">
-    <a class="tile primary" href="tel:+919930220342" aria-label="Call Shubham">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-      <span>Call</span>
-    </a>
-    <a class="tile" href="shubham-saraff.vcf" type="text/vcard" aria-label="Save contact">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
-      <span>Save Contact</span>
-    </a>
-    <a class="tile" href="https://wa.me/919930220342?text=Hi%20Shubham%2C%20I%20just%20scanned%20your%20STAIR%20card." target="_blank" rel="noopener" aria-label="Message on WhatsApp">
-      <svg class="gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
-      <span>WhatsApp</span>
-    </a>
-    <a class="tile" href="https://www.linkedin.com/in/shubhamsaraff/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
-      <svg class="gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-      <span>LinkedIn</span>
-    </a>
-    <a class="tile" href="https://stair.digital/" target="_blank" rel="noopener" aria-label="STAIR website">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-      <span>Website</span>
-    </a>
-    <a class="tile feature" href="https://stair.digital/proposal.html" target="_blank" rel="noopener" aria-label="Build your AI blueprint">
-      <svg class="gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/><path d="M17.5 14.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z" fill="currentColor" stroke="none"/></svg>
-      <span>AI Blueprint</span>
-      <small>Build yours</small>
-    </a>
-  </nav>
+<section class="block" aria-labelledby="wwd">
+  <div class="wrap">
+    <p class="eyebrow" id="wwd">What We Do</p>
+    <ul class="services">
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9.5l-5.6 1.9L12 17l-1.9-5.6L4.5 9.5l5.6-1.9z"/><path d="M19 15l.8 2.2 2.2.8-2.2.8L19 21l-.8-2.2-2.2-.8 2.2-.8z"/></svg></span>
+        <h2>Enterprise AI &amp; ExO Services</h2>
+        <p>AI strategy, AI-native transformation and Exponential Organisation (ExO) programmes.</p>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/><path d="M15 7h5v5"/></svg></span>
+        <h2>Pre-IPO &amp; Capital Markets</h2>
+        <p>IPO readiness, investor access and capital raising for growth and promoter-led companies.</p>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="5"/><path d="M6 13v7M18 13v7"/><circle cx="8" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="16" cy="5" r="1.6"/></svg></span>
+        <h2>Board Services</h2>
+        <p>Board evaluation, governance advisory and board-level AI readiness.</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-  <div class="details">
+<section class="block" aria-labelledby="fdr">
+  <div class="wrap">
+    <p class="eyebrow" id="fdr">Founders</p>
+    <div class="founders">
+      <div class="founder"><div class="mono">SH</div><b>Shailesh V.&nbsp;Haribhakti</b><span>Co-Founder<br>&amp; Chairman</span></div>
+      <div class="founder"><div class="mono">SS</div><b>Shubham Saraff</b><span>Co-Founder<br>&amp; CEO</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="cnt">
+  <div class="wrap">
+    <p class="eyebrow" id="cnt">Connect</p>
+    <nav class="grid" aria-label="Connect with Shubham">
+      <a class="tile primary" href="tel:+919930220342" aria-label="Call Shubham">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span>Call</span>
+      </a>
+      <a class="tile" href="https://wa.me/919930220342?text=Hi%20Shubham%2C%20I%20just%20scanned%20your%20STAIR%20card." target="_blank" rel="noopener" aria-label="Message on WhatsApp">
+        <svg class="gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a class="tile" href="mailto:saraff@stair.digital" aria-label="Email Shubham">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16"/><path d="M22 6l-10 7L2 6"/></svg>
+        <span>Email</span>
+      </a>
+      <a class="tile" href="https://www.linkedin.com/in/shubhamsaraff/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg class="gold" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a class="tile" href="https://www.stair.digital/" target="_blank" rel="noopener" aria-label="STAIR website">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span>Website</span>
+      </a>
+      <a class="tile feature" href="https://stair.digital/proposal.html" target="_blank" rel="noopener" aria-label="Build your AI blueprint">
+        <svg class="gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+        <span>AI Blueprint</span>
+        <small>Build yours</small>
+      </a>
+    </nav>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
     <a href="mailto:saraff@stair.digital">saraff@stair.digital</a>
     <a href="mailto:saraffshubham@gmail.com">saraffshubham@gmail.com</a>
+    <a href="tel:+919930220342">+91 99302 20342</a>
+    <span class="addr">42, Free Press House, Nariman Point, Mumbai</span>
+    <a class="web" href="https://www.stair.digital/" target="_blank" rel="noopener">www.stair.digital</a>
   </div>
-</main>
+</footer>
+
 </body>
 </html>
